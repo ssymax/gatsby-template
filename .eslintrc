@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "detect",
+      "import/resolver": {
+        "node": {
+          "paths": ["./src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
+  },
+  "env": {
+    "node": true // defines things like process.env when generating through node
+  },
+  "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "linebreak-style": 0,
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "arrow-body-style": 0,
+    "import/no-unresolved": 0,
+    "react/no-unknown-property": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "eol-last": 0
+  }
+}
